@@ -2,6 +2,8 @@
 
 Recipe for Instant Pot
 
+Swiped from [Two Sleevers](https://twosleevers.com/instant-pot-butter-chicken/)
+
 ## Ingredients
 
 ### In the Instant Pot
