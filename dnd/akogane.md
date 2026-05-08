@@ -1,7 +1,5 @@
 # Akogane
 
----
-
 | **BACKGROUND** | | **CLASS** | | **LEVEL** |
 |---|---|---|---|:---:|
 | Scribe | | Artificer | | 2 |
@@ -9,8 +7,6 @@
 | **SPECIES** | | **SUBCLASS** | | **XP** |
 |---|---|---|---|---|
 | Dragonborn | | | | |
-
----
 
 ## Combat Stats
 
@@ -26,8 +22,6 @@
 - [ ] Failure
 - [ ] Failure
 - [ ] Failure
-
----
 
 ## Core Stats
 
@@ -192,8 +186,6 @@
 > C = Concentration · R = Ritual · M = Required Material
 
 ## APPEARANCE
-
----
 
 ## BACKSTORY & PERSONALITY
 
