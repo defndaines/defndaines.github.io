@@ -132,6 +132,7 @@
 |---|---|
 | **Spellcasting** | Tools are Focus |
 | **Tinker’s Magic** | _Mending_ cantrip. As Magic action, holding tools, create item from list (pg. 8) within 5’. Lasts until Long Rest. Int mod times / Long Rest. |
+| **Replicate Magic Item** | Plans Known: 4. |
 
 ## SPECIES TRAITS
 
@@ -161,17 +162,9 @@
 
 ### Spell Slots
 
-| Level | Total |
-|---|:---:|
-| Level 1 | 2 |
-| Level 2 | |
-| Level 3 | |
-| Level 4 | |
-| Level 5 | |
-| Level 6 | |
-| Level 7 | |
-| Level 8 | |
-| Level 9 | |
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 2 | | | | | | | | |
 
 ## CANTRIPS & PREPARED SPELLS
 
@@ -182,6 +175,7 @@
 | 0 | Message | Action | 120’ | ☐ | ☐ | ☐ | 1 person message and response (PHB 298) |
 | 1 | Cure Wounds | Action | Touch | ☐ | ☐ | ☐ | 2d8+3 (PHB 259) |
 | 1 | Faerie Fire | Action | 60’ | ☐ | ☐ | ☐ | 20’ cube, Dex save, blue outline, Adv to hit (PHB 278) |
+| 1 | | | | ☐ | ☐ | ☐ | |
 
 > C = Concentration · R = Ritual · M = Required Material
 
