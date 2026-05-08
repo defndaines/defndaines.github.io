@@ -149,8 +149,6 @@
 
 - **Skilled**: Arcana, Insight, Intimidation
 
----
-
 ## SPELLCASTING
 
 | | |
