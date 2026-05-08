@@ -1,7 +1,5 @@
 # DUNGEONS & DRAGONS
 
----
-
 | **CHARACTER NAME** | | **BACKGROUND** | | **CLASS** | | **LEVEL** |
 |---|---|---|---|---|---|:---:|
 | | | | | | | |
@@ -10,14 +8,12 @@
 |---|---|---|---|---|
 | | | | | |
 
----
-
 ## Combat Stats
 
 | ARMOR CLASS | SHIELD | HIT POINTS | | | HIT DICE | |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | | **Temp** | **Current** | **Max** | **Spent** | **Max** |
-| | - [ ] | | | | | |
+| | - | | | | | |
 
 **Death Saves**
 - [ ] Success
@@ -27,8 +23,6 @@
 - [ ] Failure
 - [ ] Failure
 
----
-
 ## Core Stats
 
 | INITIATIVE | SPEED | SIZE | PASSIVE PERCEPTION |
@@ -36,8 +30,6 @@
 | | | | |
 
 **PROFICIENCY BONUS:** ___
-
----
 
 ## Ability Scores & Skills
 
@@ -107,14 +99,6 @@
 - [ ] ___ Performance
 - [ ] ___ Persuasion
 
----
-
-## HEROIC INSPIRATION
-
-- [ ]
-
----
-
 ## EQUIPMENT TRAINING & PROFICIENCIES
 
 ### Armor Training
@@ -127,15 +111,11 @@
 
 **Tools:**
 
----
-
 ## WEAPONS & DAMAGE CANTRIPS
 
 | Name | Atk Bonus / DC | Damage & Type | Notes |
 |---|:---:|---|---|
 | | | | |
-
----
 
 ## CLASS FEATURES
 
@@ -143,21 +123,9 @@
 |---|---|
 | | |
 
----
-
 ## SPECIES TRAITS
 
----
-
 ## FEATS
-
----
-
----
-
-# Page 2 — Spellcasting & Background
-
----
 
 ## SPELLCASTING
 
@@ -182,8 +150,6 @@
 | Level 8 | | |
 | Level 9 | | |
 
----
-
 ## CANTRIPS & PREPARED SPELLS
 
 | Level | Name | Casting Time | Range | C | R | M | Notes |
@@ -191,8 +157,6 @@
 | | | | | ☐ | ☐ | ☐ | |
 
 > C = Concentration · R = Ritual · M = Required Material
-
----
 
 ## APPEARANCE
 
@@ -202,11 +166,10 @@
 
 **Alignment:**
 
----
-
 ## LANGUAGES
 
----
+- Common
+- ?
 
 ## EQUIPMENT
 
@@ -214,8 +177,6 @@
 - [ ] ___________________________
 - [ ] ___________________________
 - [ ] ___________________________
-
----
 
 ## COINS
 

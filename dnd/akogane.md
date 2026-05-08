@@ -17,7 +17,7 @@
 | ARMOR CLASS | SHIELD | HIT POINTS | | | HIT DICE | |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | | **Temp** | **Current** | **Max** | **Spent** | **Max** |
-| 15 | - [x] | | 17 | | | 2D8 |
+| 15 | ✓ | | 17 | | | 2D8 |
 
 **Death Saves**
 - [ ] Success
@@ -35,9 +35,7 @@
 |:---:|:---:|:---:|:---:|
 | +2 | 30’ | Medium | 13 |
 
-**PROFICIENCY BONUS:** _+2_
-
----
+**PROFICIENCY BONUS**: _+2_
 
 ## Ability Scores & Skills
 
@@ -107,14 +105,6 @@
 - [ ] ___ Performance
 - [ ] ___ Persuasion
 
----
-
-## HEROIC INSPIRATION
-
-- [ ]
-
----
-
 ## EQUIPMENT TRAINING & PROFICIENCIES
 
 ### Armor Training
@@ -134,8 +124,6 @@
 - Tinker’s Tools
 - Cartographer’s Tools
 
----
-
 ## WEAPONS & DAMAGE CANTRIPS
 
 | Name | Atk Bonus / DC | Damage & Type | Notes |
@@ -144,8 +132,6 @@
 | Acid Splash | 13 | 1d6 Acid | 60' |
 | Breath Weapon | 12 | 1d10 Acid | Dex save for ½, 15’ cone or 30’ line (5’ wide) |
 
----
-
 ## CLASS FEATURES
 
 | | |
@@ -153,11 +139,7 @@
 | **Spellcasting** | Tools are Focus |
 | **Tinker’s Magic** | _Mending_ cantrip. As Magic action, holding tools, create item from list (pg. 8) within 5’. Lasts until Long Rest. Int mod times / Long Rest. |
 
----
-
 ## SPECIES TRAITS
-
----
 
 - **Draconic Ancestry**: Copper
 - **Breath Weapon**:
@@ -170,11 +152,7 @@
 
 ## FEATS
 
----
-
----
-
-# Page 2 — Spellcasting & Background
+- **Skilled**: Arcana, Insight, Intimidation
 
 ---
 
@@ -182,36 +160,36 @@
 
 | | |
 |---|---|
-| **Spellcasting Ability** | |
-| **Spellcasting Modifier** | |
-| **Spell Save DC** | |
-| **Spell Attack Bonus** | |
+| **Spellcasting Ability** | Intelligence |
+| **Spellcasting Modifier** | +3 |
+| **Spell Save DC** | +3 |
+| **Spell Attack Bonus** | +5 |
 
 ### Spell Slots
 
-| Level | Total | Expended |
-|---|:---:|:---:|
-| Level 1 | | |
-| Level 2 | | |
-| Level 3 | | |
-| Level 4 | | |
-| Level 5 | | |
-| Level 6 | | |
-| Level 7 | | |
-| Level 8 | | |
-| Level 9 | | |
-
----
+| Level | Total |
+|---|:---:|
+| Level 1 | 2 |
+| Level 2 | |
+| Level 3 | |
+| Level 4 | |
+| Level 5 | |
+| Level 6 | |
+| Level 7 | |
+| Level 8 | |
+| Level 9 | |
 
 ## CANTRIPS & PREPARED SPELLS
 
 | Level | Name | Casting Time | Range | C | R | M | Notes |
 |:---:|---|---|---|:---:|:---:|:---:|---|
-| | | | | ☐ | ☐ | ☐ | |
+| 0 | Mending | 1 min | Touch | ☐ | ☐ | ☒ | Repair 1’ (PHB 297) |
+| 0 | Acid Splash | Action | 60’ | ☐ | ☐ | ☐ | 5’ sphere (PHB 239) |
+| 0 | Message | Action | 120’ | ☐ | ☐ | ☐ | 1 person message and response (PHB 298) |
+| 1 | Cure Wounds | Action | Touch | ☐ | ☐ | ☐ | 2d8+3 (PHB 259) |
+| 1 | Faerie Fire | Action | 60’ | ☐ | ☐ | ☐ | 20’ cube, Dex save, blue outline, Adv to hit (PHB 278) |
 
 > C = Concentration · R = Ritual · M = Required Material
-
----
 
 ## APPEARANCE
 
@@ -219,25 +197,43 @@
 
 ## BACKSTORY & PERSONALITY
 
-**Alignment:**
-
----
+**Alignment**: Chaotic Good
 
 ## LANGUAGES
 
----
+- Common
+- Common Sign Language
+- Draconic
 
 ## EQUIPMENT
+
+- Studded Leather Armor
+- Dagger (3)
+- Fine Clothes
+- Lamp
+- Oil (5 flasks)
+- Parchment (12 sheets)
+- Thieves’ Tools
+- Tinker’s Tools
+- Dungeoneer’s Pack
+    - Backpack
+    - Caltrops
+    - Rations (10 days)
+    - Rope
+    - Tinderbox
+    - Torches (10)
+    - Waterskin
+    - Bedroll
+- Lodestones (2)
+- Spool of Copper Wire
 
 **Magic Item Attunement:**
 - [ ] ___________________________
 - [ ] ___________________________
 - [ ] ___________________________
 
----
-
 ## COINS
 
 | CP | SP | EP | GP | PP |
 |:---:|:---:|:---:|:---:|:---:|
-| | | | | |
+| | | | 34 | |
