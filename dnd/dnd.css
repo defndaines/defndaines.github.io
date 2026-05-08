@@ -1,0 +1,413 @@
+/* ──────────────────────────────────────────────────────────
+   dnd.css — shared stylesheet for defndaines.github.io/dnd
+   ────────────────────────────────────────────────────────── */
+
+/* ── CSS Variables ── */
+:root {
+  --green-dark:  #1b3a2b;
+  --green-mid:   #2d6048;
+  --green-light: #4a8a64;
+  --tan:         #f8f4ec;
+  --tan-dark:    #e8e0d0;
+  --ink:         #151515;
+  --muted:       #666;
+  --border:      #3a6048;
+  --rule:        #afc8b8;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   CHARACTER DESCRIPTION  (akogane-character-description.html)
+   ════════════════════════════════════════════════════════════ */
+
+body.character-description {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #2c2c2c;
+}
+
+body.character-description h1 {
+  font-size: 2.5em;
+  color: #8b4513;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+body.character-description h2 {
+  font-size: 1.8em;
+  color: #a0522d;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #d2691e;
+  padding-bottom: 10px;
+}
+
+body.character-description p {
+  margin: 0 0 1.2em 0;
+  text-align: justify;
+}
+
+body.character-description em {
+  color: #8b4513;
+  font-style: italic;
+}
+
+body.character-description strong {
+  color: #654321;
+  font-weight: 600;
+}
+
+body.character-description .character-name {
+  text-align: center;
+  font-style: italic;
+  margin: 30px 0;
+  color: #8b4513;
+  font-size: 1.1em;
+}
+
+body.character-description .character-image {
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 250px;
+  border: 1px solid #d2691e;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   CHARACTER SHEET  (character-sheet.html)
+   ════════════════════════════════════════════════════════════ */
+
+/* Box-model reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body.character-sheet {
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: var(--ink);
+  background: #888;
+  margin: 0;
+  padding: 20px;
+}
+
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  background: #fff;
+  margin: 0 auto 20px;
+  padding: 0.28in 0.32in;
+  box-shadow: 0 4px 20px rgba(0,0,0,.4);
+}
+
+@media print {
+  body.character-sheet { background: #fff; padding: 0; }
+  .page { width: 100%; min-height: auto; box-shadow: none; margin: 0; padding: .25in; page-break-after: always; }
+}
+
+/* ── Inputs ── */
+input[type=text], input[type=number] {
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--ink);
+  outline: none;
+  padding: 1px 2px;
+}
+textarea {
+  width: 100%;
+  border: 1px solid var(--rule);
+  background: transparent;
+  font-family: inherit;
+  font-size: 10px;
+  color: var(--ink);
+  outline: none;
+  padding: 3px 4px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* Custom round checkbox */
+input[type=checkbox] {
+  -webkit-appearance: none; appearance: none;
+  width: 11px; height: 11px;
+  border: 1.5px solid var(--green-mid);
+  border-radius: 50%;
+  cursor: pointer; flex-shrink: 0;
+  vertical-align: middle;
+  background: #fff;
+}
+input[type=checkbox]:checked { background: var(--green-mid); }
+
+/* ── Section wrapper ── */
+.sec { margin-bottom: 5px; }
+.sec-head {
+  background: var(--green-dark); color: #fff;
+  font-size: 7px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase;
+  text-align: center; padding: 2px 4px; border-radius: 2px 2px 0 0;
+}
+.sec-body {
+  border: 1px solid var(--border); border-top: none;
+  border-radius: 0 0 2px 2px;
+}
+
+/* ── Labels ── */
+.lbl {
+  display: block; font-size: 7px; font-weight: bold; letter-spacing: .8px;
+  text-transform: uppercase; color: var(--green-dark); text-align: center;
+}
+
+/* ── Title banner ── */
+.banner {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--green-dark); color: #fff;
+  padding: 4px 10px; margin-bottom: 6px; border-radius: 3px;
+}
+.banner-title { font-size: 13px; font-weight: bold; letter-spacing: 3px; }
+.banner-sub { font-size: 8px; letter-spacing: 2px; opacity: .8; }
+
+/* ── Character header ── */
+.char-header {
+  display: grid;
+  grid-template-columns: 2.2fr repeat(8, 1fr);
+  gap: 5px; align-items: end;
+  border-bottom: 2px solid var(--green-dark);
+  padding-bottom: 7px; margin-bottom: 8px;
+}
+.char-name-col input {
+  width: 100%; font-size: 20px; font-weight: bold;
+  font-family: Georgia, serif;
+  border-bottom: 2px solid var(--green-dark); padding: 2px 0;
+}
+.hdr-field { display: flex; flex-direction: column; align-items: center; }
+.hdr-field input { width: 100%; text-align: center; font-size: 10px; font-weight: bold; }
+.hdr-field .lbl { margin-top: 2px; }
+
+/* ── Three-column body ── */
+.sheet-body {
+  display: grid;
+  grid-template-columns: 190px 1fr 215px;
+  gap: 8px;
+}
+
+/* ── Ability Scores ── */
+.ability-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 4px; padding: 4px;
+}
+.ability-block {
+  display: flex; flex-direction: column; align-items: center;
+  border: 1.5px solid var(--border); border-radius: 4px;
+  padding: 4px 2px 3px; background: var(--tan);
+}
+.ability-block .aname {
+  font-size: 7px; font-weight: bold; letter-spacing: .5px;
+  text-transform: uppercase; color: var(--green-dark); text-align: center;
+}
+.ability-block .ascore {
+  width: 34px; height: 28px; text-align: center;
+  font-size: 14px; font-weight: bold;
+  border: 1.5px solid var(--border) !important;
+  border-radius: 3px; background: #fff !important;
+  margin: 2px 0 1px;
+}
+.ability-block .amod {
+  width: 32px; height: 32px; border: 2px solid var(--green-dark);
+  border-radius: 50%; background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: bold; margin: 2px 0;
+}
+
+/* ── Prof / Inspiration ── */
+.prof-insp {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 5px;
+}
+.stat-tile {
+  display: flex; flex-direction: column; align-items: center;
+  border: 1.5px solid var(--border); border-radius: 3px;
+  padding: 5px 3px 3px; background: var(--tan);
+}
+.stat-tile input[type=text] {
+  width: 36px; text-align: center; font-size: 14px; font-weight: bold;
+}
+.stat-tile input[type=checkbox] { width: 16px; height: 16px; margin: 3px 0; }
+
+/* ── Saving Throws ── */
+.save-row {
+  display: flex; align-items: center; gap: 3px;
+  padding: 2px 6px; border-bottom: 1px solid var(--tan-dark);
+}
+.save-row:last-child { border-bottom: none; }
+.save-mod { font-size: 9px; font-weight: bold; min-width: 22px; text-align: right; color: var(--ink); }
+.save-name { font-size: 8.5px; flex: 1; }
+
+/* ── Senses ── */
+.sense-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 2px 6px; border-bottom: 1px solid var(--tan-dark);
+}
+.sense-row:last-child { border-bottom: none; }
+.sense-val { font-size: 12px; font-weight: bold; min-width: 26px; text-align: center; border-bottom: 1px solid var(--rule); }
+.sense-name { font-size: 8.5px; flex: 1; padding-left: 5px; }
+
+/* ── Combat ── */
+.combat-top {
+  display: grid; grid-template-columns: 1fr 1fr 1.6fr;
+  gap: 5px; margin-bottom: 5px;
+}
+.combat-tile {
+  display: flex; flex-direction: column; align-items: center;
+  border: 1.5px solid var(--border); border-radius: 4px;
+  padding: 5px 3px 3px; background: var(--tan);
+}
+.combat-tile input {
+  width: 100%; text-align: center;
+  font-size: 18px; font-weight: bold;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--rule) !important;
+}
+.speed-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2px; width: 100%;
+}
+.speed-entry { display: flex; flex-direction: column; align-items: center; }
+.speed-entry input { width: 100%; text-align: center; font-size: 11px; font-weight: bold; }
+.speed-entry .lbl { font-size: 6.5px; }
+
+/* ── Hit Points ── */
+.hp-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px; margin-bottom: 5px;
+}
+.hp-tile {
+  display: flex; flex-direction: column;
+  border: 1.5px solid var(--border); border-radius: 3px;
+  background: var(--tan); padding: 3px 5px;
+}
+.hp-tile input {
+  width: 100%; font-size: 14px; font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid var(--rule) !important;
+}
+
+/* ── Hit Dice / Death Saves ── */
+.hd-death {
+  display: grid; grid-template-columns: 1fr 1.3fr;
+  gap: 5px; margin-bottom: 5px;
+}
+.death-inner { padding: 3px 5px; }
+.death-row { display: flex; align-items: center; gap: 3px; margin: 2px 0; }
+.death-label { font-size: 7.5px; font-weight: bold; text-transform: uppercase; color: var(--green-dark); min-width: 48px; }
+.death-boxes { display: flex; gap: 3px; }
+
+/* ── Attacks table ── */
+.atk-table { width: 100%; border-collapse: collapse; font-size: 9px; margin-bottom: 5px; }
+.atk-table thead th {
+  background: var(--green-dark); color: #fff;
+  padding: 2px 4px; font-size: 7px; letter-spacing: .8px; text-transform: uppercase;
+}
+.atk-table thead th:first-child { text-align: left; }
+.atk-table thead th:not(:first-child) { text-align: center; }
+.atk-table tbody td { border-bottom: 1px solid var(--rule); padding: 1px 4px; }
+.atk-table tbody td input { width: 100%; font-size: 9px; }
+.atk-table tbody td:first-child input { text-align: left; }
+.atk-table tbody td:not(:first-child) input { text-align: center; }
+
+/* ── Coins ── */
+.coins-row {
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: 3px; padding: 4px 5px;
+}
+.coin-entry { display: flex; flex-direction: column; align-items: center; }
+.coin-entry input { width: 100%; text-align: center; font-size: 11px; font-weight: bold; border-bottom: 1px solid var(--rule) !important; }
+
+/* ── Skills ── */
+.skill-row {
+  display: flex; align-items: center; gap: 2px;
+  padding: 1.5px 5px; border-bottom: 1px solid var(--tan-dark);
+}
+.skill-row:last-child { border-bottom: none; }
+.skill-checks { display: flex; gap: 2px; }
+.skill-checks input[type=checkbox]:last-child {
+  border: 1.5px solid var(--green-mid);
+  outline: 1.5px solid var(--green-mid); outline-offset: 1px;
+}
+.skill-checks input[type=checkbox]:last-child:checked { background: var(--green-mid); }
+.skill-mod { font-size: 9px; font-weight: bold; min-width: 22px; text-align: right; color: var(--ink); }
+.skill-name { font-size: 8.5px; flex: 1; padding-left: 2px; }
+.skill-ability { font-size: 7px; color: var(--muted); }
+
+/* ── Page 2: Background & Personality ── */
+.p2-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.appear-fields {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5px; padding: 5px;
+}
+.appear-field { display: flex; flex-direction: column; }
+.appear-field input { width: 100%; border-bottom: 1px solid var(--rule) !important; font-size: 10px; }
+.portrait-box {
+  border: 1px solid var(--border); height: 190px;
+  display: flex; align-items: center; justify-content: center;
+  color: #aaa; font-size: 9px; background: var(--tan);
+  margin: 5px; font-style: italic;
+}
+.p2-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 8px; }
+
+/* ── Page 3: Spellcasting ── */
+.spell-header {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 8px; margin-bottom: 8px;
+}
+.spell-hdr-tile {
+  display: flex; flex-direction: column; align-items: center;
+  border: 1.5px solid var(--border); border-radius: 3px;
+  padding: 5px 4px 3px; background: var(--tan);
+}
+.spell-hdr-tile input {
+  width: 100%; text-align: center; font-size: 16px; font-weight: bold;
+  border-bottom: 1px solid var(--rule) !important; background: transparent !important;
+}
+.cantrip-col { margin-bottom: 8px; }
+.cantrip-list {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 0; padding: 2px;
+}
+.cantrip-list input {
+  font-size: 9px; border-bottom: 1px solid var(--rule) !important;
+  padding: 2px 3px;
+}
+.spell-columns {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.spell-lvl-block { border: 1px solid var(--border); border-radius: 3px; margin-bottom: 6px; }
+.spell-lvl-head {
+  background: var(--green-mid); color: #fff;
+  padding: 2px 6px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 7.5px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase;
+}
+.spell-slot-row {
+  display: flex; align-items: center; gap: 3px;
+  padding: 2px 6px; font-size: 8px;
+  border-bottom: 1px solid var(--tan-dark);
+}
+.slot-checks { display: flex; gap: 2px; }
+.slot-box {
+  -webkit-appearance: none; appearance: none;
+  width: 10px; height: 10px;
+  border: 1px solid var(--green-mid);
+  cursor: pointer; background: #fff;
+}
+.slot-box:checked { background: var(--green-mid); }
+.spell-list-area input {
+  width: 100%; font-size: 9px;
+  border-bottom: 1px solid var(--rule) !important;
+  padding: 2px 3px; display: block;
+}
