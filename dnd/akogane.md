@@ -122,7 +122,7 @@
 
 | Name | Atk Bonus / DC | Damage & Type | Notes |
 |---|:---:|---|---|
-| Dagger | +4 | 1d4 Piercing | 20’/60’ |
+| Dagger (Returning) | +5 | 1d4+3 Piercing | 20’/60’ |
 | Acid Splash | 13 | 1d6 Acid | 60' |
 | Breath Weapon | 12 | 1d10 Acid | Dex save for ½, 15’ cone or 30’ line (5’ wide) |
 
@@ -132,7 +132,7 @@
 |---|---|
 | **Spellcasting** | Tools are Focus |
 | **Tinker’s Magic** | _Mending_ cantrip. As Magic action, holding tools, create item from list (pg. 8) within 5’. Lasts until Long Rest. Int mod times / Long Rest. |
-| **Replicate Magic Item** | Plans Known: 4. |
+| **Replicate Magic Item** | Plans Known: 4, Magic Items: 2. Plans: Bag of Holding, Sending Stones, Cap of Water Breathing, Returning Weapon  |
 
 ## SPECIES TRAITS
 
@@ -172,8 +172,8 @@
 | 0 | Acid Splash | Action | 60’ | ☐ | ☐ | ☐ | 5’ sphere (PHB 239) |
 | 0 | Message | Action | 120’ | ☐ | ☐ | ☐ | 1 person message and response (PHB 298) |
 | 1 | Cure Wounds | Action | Touch | ☐ | ☐ | ☐ | 2d8+3 (PHB 259) |
-| 1 | Faerie Fire | Action | 60’ | ☐ | ☐ | ☐ | 20’ cube, Dex save, blue outline, Adv to hit (PHB 278) |
-| 1 | | | | ☐ | ☐ | ☐ | |
+| 1 | Faerie Fire | Action | 60’ | ☒ | ☐ | ☐ | 20’ cube, Dex save, blue outline, Adv to hit (PHB 278) |
+| 1 | Identify | 1 min | Touch | ☒ | ☒ | ☐ | |
 
 > C = Concentration · R = Ritual · M = Required Material
 
@@ -192,8 +192,10 @@
 ## EQUIPMENT
 
 - Studded Leather Armor
-- Dagger (3)
+- Dagger of Returning (+1, *Crafted Magic Item*)
+- Dagger (2)
 - Fine Clothes
+- Bag of Holding (*Crafted Magic Item*)
 - Lamp
 - Oil (5 flasks)
 - Parchment (12 sheets)
