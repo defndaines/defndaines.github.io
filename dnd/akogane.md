@@ -6,7 +6,7 @@
 
 | **SPECIES** | | **SUBCLASS** | | **XP** |
 |---|---|---|---|---|
-| Dragonborn | | | | |
+| Dragonborn (Copper) | | | | 600 |
 
 ## Combat Stats
 
@@ -16,12 +16,8 @@
 | 15 | ✓ | | 17 | | | 2D8 |
 
 **Death Saves**
-- [ ] Success
-- [ ] Success
-- [ ] Success
-- [ ] Failure
-- [ ] Failure
-- [ ] Failure
+| Success | ☐ | ☐ | ☐ |
+| Failure | ☐ | ☐ | ☐ |
 
 ## Core Stats
 
@@ -29,7 +25,7 @@
 |:---:|:---:|:---:|:---:|
 | +2 | 30’ | Medium | 13 |
 
-**PROFICIENCY BONUS**: _+2_
+**PROFICIENCY BONUS**: \_+2\_
 
 ## Ability Scores & Skills
 
@@ -39,8 +35,8 @@
 |:---:|:---:|
 | 10 | - |
 
-- [ ] ___ Saving Throw
-- [ ] ___ Athletics
+- [ ] `___` Saving Throw
+- [ ] `___` Athletics
 
 ### DEXTERITY
 
@@ -48,10 +44,10 @@
 |:---:|:---:|
 | 14 | +2 |
 
-- [ ] ___ Saving Throw
-- [ ] ___ Acrobatics
-- [x] _+4_ Sleight of Hand
-- [ ] ___ Stealth
+- [ ] `___` Saving Throw
+- [ ] `___` Acrobatics
+- [x] \_+4\_ Sleight of Hand
+- [ ] `___` Stealth
 
 ### CONSTITUTION
 
@@ -59,7 +55,7 @@
 |:---:|:---:|
 | 14 | +2 |
 
-- [x] _+4_ Saving Throw
+- [x] \_+4\_ Saving Throw
 
 ### INTELLIGENCE
 
@@ -67,12 +63,12 @@
 |:---:|:---:|
 | 16 | +3 |
 
-- [x] _+5_ Saving Throw
-- [x] _+5_ Arcana
-- [x] _+5_ History
-- [x] _+5_ Investigation
-- [ ] ___ Nature
-- [ ] ___ Religion
+- [x] \_+5\_ Saving Throw
+- [x] \_+5\_ Arcana
+- [x] \_+5\_ History
+- [x] \_+5\_ Investigation
+- [ ] `___` Nature
+- [ ] `___` Religion
 
 ### WISDOM
 
@@ -80,12 +76,12 @@
 |:---:|:---:|
 | 13 | |1 |
 
-- [ ] ___ Saving Throw
-- [ ] ___ Animal Handling
-- [x] _+3_ Insight
-- [ ] ___ Medicine
-- [x] _+3_ Perception
-- [ ] ___ Survival
+- [ ] `___` Saving Throw
+- [ ] `___` Animal Handling
+- [x] \_+3\_ Insight
+- [ ] `___` Medicine
+- [x] \_+3\_ Perception
+- [ ] `___` Survival
 
 ### CHARISMA
 
@@ -93,11 +89,11 @@
 |:---:|:---:|
 | 8 | -1 |
 
-- [ ] ___ Saving Throw
-- [ ] ___ Deception
-- [x] _+1_ Intimidation
-- [ ] ___ Performance
-- [ ] ___ Persuasion
+- [ ] `___` Saving Throw
+- [ ] `___` Deception
+- [x] \_+1\_ Intimidation
+- [ ] `___` Performance
+- [ ] `___` Persuasion
 
 ## EQUIPMENT TRAINING & PROFICIENCIES
 
@@ -179,7 +175,12 @@
 
 ## APPEARANCE
 
+[Physical Appearance](akogane-character-description.html#physical-appearance)
+
 ## BACKSTORY & PERSONALITY
+
+- [Backstory](akogane-character-description.html#backstory)
+- [Personality](akogane-character-description.html#personality-voice)
 
 **Alignment**: Chaotic Good
 
@@ -212,14 +213,15 @@
     - Bedroll
 - Lodestones (2)
 - Spool of Copper Wire
+- Business Card for Bluebell Agent
 
 **Magic Item Attunement:**
-- [ ] ___________________________
-- [ ] ___________________________
-- [ ] ___________________________
+- [ ] `___________________________`
+- [ ] `___________________________`
+- [ ] `___________________________`
 
 ## COINS
 
 | CP | SP | EP | GP | PP |
 |:---:|:---:|:---:|:---:|:---:|
-| | | | 34 | |
+| | | | 184 | |
