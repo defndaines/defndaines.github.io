@@ -16,12 +16,8 @@
 | | - | | | | | |
 
 **Death Saves**
-- [ ] Success
-- [ ] Success
-- [ ] Success
-- [ ] Failure
-- [ ] Failure
-- [ ] Failure
+| Success | ☐ | ☐ | ☐ |
+| Failure | ☐ | ☐ | ☐ |
 
 ## Core Stats
 
