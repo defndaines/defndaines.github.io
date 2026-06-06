@@ -182,6 +182,7 @@
 | 1 | False Life | Action | Self | ☐ | ☐ | ☐ | 2d4+4 temp hp (PHB 271) |
 | 1 | Grease | Action | 60’ | ☐ | ☐ | ☐ | 10’ square. Non-flammable. Difficult terrain. vs. Dex or Prone. (PHB 280) |
 | 1 | Sanctuary | Bonus | 30’ | ☐ | ☐ | ☐ | vs. Wis to attack target until they attack/cast. 1 min (PHB 313) |
+
 > C = Concentration · R = Ritual · M = Required Material
 
 ## APPEARANCE
