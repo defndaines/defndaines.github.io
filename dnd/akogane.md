@@ -124,7 +124,7 @@
 | Dagger (Returning) | +5 | 1d4+3 Piercing | 20’/60’ |
 | Acid Splash | 13 | 1d6 Acid | 60' |
 | Breath Weapon | 12 | 1d10 Acid | Dex save for ½, 15’ cone or 30’ line (5’ wide) |
-| Guiding Bolt | +5 | 4d6 Radiant | 120’, Advantage on next attack |
+| Guiding Bolt | +4 | 4d6 Radiant | 120’, Advantage on next attack |
 
 ## CLASS FEATURES
 
