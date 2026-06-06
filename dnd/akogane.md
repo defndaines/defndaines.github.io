@@ -133,7 +133,7 @@
 | **Spellcasting** | Tools are Focus |
 | **Tinker’s Magic** | _Mending_ cantrip. As Magic action, holding tools, create item from list (pg. 8) within 5’. Lasts until Long Rest. Int mod times / Long Rest. |
 | **Replicate Magic Item** | Plans Known: 4, Magic Items: 2. Plans: Bag of Holding, Sending Stones, Cap of Water Breathing, Returning Weapon |
-| **Tolls of the Trade** | Tool Proficiency: . Scroll Crafting: Time is halved. |
+| **Tools of the Trade** | Tool Proficiency: Cartographer’s Tools, Calligrapher’s Supplies. Scroll Crafting: Time is halved. |
 | **Cartographer Spells** | Faerie Fire, Guiding Bolt, Healing Word |
 | **Adventurer’s Atlas** | Int mod + 1 (4) creatures (incl. self) magical maps to identify each other’s locations on same plane of existence, unreadable to others. With map: *Awareness*: +1d4 to initiative. *Positioning*: Can target any holder with spell effect within range regardless of sight or cover. |
 | **Mapping Magic** | *Illuminated Cartography*: Int mod (3) / Long Rest, cast Faerie Fire without using spell slot. *Portal Jump*: Can spend up to half of movement to teleport to unoccupied space within 10’ of self or 5’ of creature within 30’ holding AA map. (Cannot use if speed is 0’) |
