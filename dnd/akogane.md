@@ -26,7 +26,7 @@
 |:---:|:---:|:---:|:---:|
 | +2 | 30’ | Medium | 13 |
 
-**PROFICIENCY BONUS**: \_+2\_
+**PROFICIENCY BONUS**: `_+2_`
 
 ## Ability Scores & Skills
 
@@ -36,8 +36,8 @@
 |:---:|:---:|
 | 10 | - |
 
-- [ ] `___` Saving Throw
-- [ ] `___` Athletics
+- [ ] `____` Saving Throw
+- [ ] `____` Athletics
 
 ### DEXTERITY
 
@@ -45,10 +45,10 @@
 |:---:|:---:|
 | 14 | +2 |
 
-- [ ] `___` Saving Throw
-- [ ] `___` Acrobatics
-- [x] \_+4\_ Sleight of Hand
-- [ ] `___` Stealth
+- [ ] `____` Saving Throw
+- [ ] `____` Acrobatics
+- [x] `_+4_` Sleight of Hand
+- [ ] `____` Stealth
 
 ### CONSTITUTION
 
@@ -56,7 +56,7 @@
 |:---:|:---:|
 | 14 | +2 |
 
-- [x] \_+4\_ Saving Throw
+- [x] `_+4_` Saving Throw
 
 ### INTELLIGENCE
 
@@ -64,12 +64,12 @@
 |:---:|:---:|
 | 16 | +3 |
 
-- [x] \_+5\_ Saving Throw
-- [x] \_+5\_ Arcana
-- [x] \_+5\_ History
-- [x] \_+5\_ Investigation
-- [ ] `___` Nature
-- [ ] `___` Religion
+- [x] `_+5_` Saving Throw
+- [x] `_+5_` Arcana
+- [x] `_+5_` History
+- [x] `_+5_` Investigation
+- [ ] `____` Nature
+- [ ] `____` Religion
 
 ### WISDOM
 
@@ -77,12 +77,12 @@
 |:---:|:---:|
 | 13 | | +1 |
 
-- [ ] `___` Saving Throw
-- [ ] `___` Animal Handling
-- [x] \_+3\_ Insight
-- [ ] `___` Medicine
-- [x] \_+3\_ Perception
-- [ ] `___` Survival
+- [ ] `____` Saving Throw
+- [ ] `____` Animal Handling
+- [x] `_+3_` Insight
+- [ ] `____` Medicine
+- [x] `_+3_` Perception
+- [ ] `____` Survival
 
 ### CHARISMA
 
@@ -90,11 +90,11 @@
 |:---:|:---:|
 | 8 | -1 |
 
-- [ ] `___` Saving Throw
-- [ ] `___` Deception
-- [x] \_+1\_ Intimidation
-- [ ] `___` Performance
-- [ ] `___` Persuasion
+- [ ] `____` Saving Throw
+- [ ] `____` Deception
+- [x] `_+1_` Intimidation
+- [ ] `____` Performance
+- [ ] `____` Persuasion
 
 ## EQUIPMENT TRAINING & PROFICIENCIES
 
@@ -110,12 +110,12 @@
 
 **Tools:**
 
-- Calligrapher’s Supplies
-- Cartographer’s Tools
-- Thieves’ Tools
-- Tinker’s Tools
-- (level 3)
-- (level 3)
+- Calligrapher’s Supplies (Dex) (Scribe Origin)
+- Cartographer’s Tools (Wis) (Cartographer)
+- Alchemist’s Supplies (Int) (Cartographer)
+- Navigator’s Tools (Wis) (Artificer)
+- Thieves’ Tools (Dex) (Artificer)
+- Tinker’s Tools (Dex) (Artificer)
 
 ## WEAPONS & DAMAGE CANTRIPS
 
