@@ -6,7 +6,7 @@
 
 | **SPECIES** | | **SUBCLASS** | | **XP** |
 |---|---|---|---|---|
-| Dragonborn (Copper) | | Cartographer | | 900 |
+| Dragonborn (Copper) | | Cartographer | | 1500 |
 
 ## Combat Stats
 
