@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D&amp;D Character Roster</title>
+    <style>
+:root {
+  --bg: #16141c;
+  --panel: #201d29;
+  --panel-alt: #262233;
+  --border: #3a3448;
+  --text: #ece7f5;
+  --muted: #b3a9c9;
+  --accent: #c9a86a;
+  --accent2: #8fb8de;
+  font-size: 16px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 0 4rem 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.55;
+}
+header.page-header {
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, #2a2436 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+}
+header.page-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+header.page-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+h2.section-title {
+  margin: 3rem 0 1rem;
+  font-size: 1.4rem;
+  color: var(--accent2);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+table.roster {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  font-size: 0.95rem;
+  background: var(--panel);
+}
+table.roster th, table.roster td {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+table.roster thead th {
+  background: var(--panel-alt);
+  color: var(--accent);
+  font-weight: 600;
+}
+table.roster tbody tr:hover {
+  background: var(--panel-alt);
+}
+.character-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+  @media (min-width: 900px) {
+    .character-grid { grid-template-columns: 1fr 1fr; }
+  }
+  section.character-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.4rem 1.6rem 1.6rem;
+    break-inside: avoid;
+  }
+  h2.char-name {
+    margin: 0;
+    font-size: 1.35rem;
+    color: var(--accent);
+  }
+  p.char-subtitle {
+    margin: 0.1rem 0 1rem;
+    color: var(--accent2);
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+  dl.statblock {
+    margin: 0 0 1rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 0.8rem;
+    row-gap: 0.35rem;
+    font-size: 0.92rem;
+  }
+  dl.statblock .row {
+    display: contents;
+  }
+  dl.statblock dt {
+    color: var(--muted);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  dl.statblock dd {
+    margin: 0;
+  }
+  .row-personality-traits dd, .row-trinket dd, .row-appearance dd {
+    font-style: italic;
+    color: var(--text);
+  }
+  p.backstory {
+    margin: 1rem 0 0;
+    padding-top: 0.9rem;
+    border-top: 1px dashed var(--border);
+    font-size: 0.97rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 3rem;
+  }
+  strong { color: var(--text); }
+  em { color: var(--accent2); font-style: italic; }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>D&amp;D Character Roster</h1>
+      <p>25 first-level D&amp;D 5.5 (2024) characters &mdash; core species/classes plus Warforged &amp; Artificer from Eberron.</p>
+    </header>
+    <main>
+      <h2 class="section-title">Roster at a Glance</h2>
+      <table class="roster">
+        <thead><tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Class</th>
+            <th>Gender</th>
+            <th>Alignment</th>
+          </tr></thead><tbody>
+            <tr>
+              <td>1</td>
+              <td>Seraphina Vaelthorne</td>
+              <td>Aasimar</td>
+              <td>Cleric</td>
+              <td>Female</td>
+              <td>Lawful Good</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ezriel Marnhollow</td>
+              <td>Aasimar</td>
+              <td>Paladin</td>
+              <td>Male</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Vezz Kalathrax</td>
+              <td>Dragonborn</td>
+              <td>Sorcerer</td>
+              <td>Female</td>
+              <td>Chaotic Good</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Thurgon Emberscale</td>
+              <td>Dragonborn</td>
+              <td>Barbarian</td>
+              <td>Male</td>
+              <td>Chaotic Good</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Borin Ironfoot</td>
+              <td>Dwarf</td>
+              <td>Fighter</td>
+              <td>Male</td>
+              <td>Lawful Good</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Helga Stonebrewer</td>
+              <td>Dwarf</td>
+              <td>Cleric</td>
+              <td>Female</td>
+              <td>Lawful Good</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Kordun Deepdelve</td>
+              <td>Dwarf</td>
+              <td>Ranger</td>
+              <td>Male</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Illyara Moonwhisper</td>
+              <td>Elf (High)</td>
+              <td>Wizard</td>
+              <td>Female</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Thal Duskrunner</td>
+              <td>Elf (Drow)</td>
+              <td>Rogue</td>
+              <td>Male</td>
+              <td>Chaotic Neutral</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Sylvaine Willowmere</td>
+              <td>Elf (Wood)</td>
+              <td>Druid</td>
+              <td>Female</td>
+              <td>True Neutral</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Fizzwick Cogsprocket</td>
+              <td>Gnome (Rock)</td>
+              <td>Artificer</td>
+              <td>Male</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Pip Fernwhistle</td>
+              <td>Gnome (Forest)</td>
+              <td>Bard</td>
+              <td>Female</td>
+              <td>Chaotic Good</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Krag Stonefist</td>
+              <td>Goliath</td>
+              <td>Barbarian</td>
+              <td>Male</td>
+              <td>Chaotic Good</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Vashti Cloudstep</td>
+              <td>Goliath</td>
+              <td>Monk</td>
+              <td>Female</td>
+              <td>Lawful Neutral</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Rosalind Underfoot</td>
+              <td>Halfling</td>
+              <td>Rogue</td>
+              <td>Female</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Tobias Steepwater</td>
+              <td>Halfling</td>
+              <td>Monk</td>
+              <td>Male</td>
+              <td>Lawful Good</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>Maren Voss</td>
+              <td>Human</td>
+              <td>Wizard</td>
+              <td>Female</td>
+              <td>Lawful Good</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Silas Windham</td>
+              <td>Human</td>
+              <td>Ranger</td>
+              <td>Male</td>
+              <td>True Neutral</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Odette Larkspur</td>
+              <td>Human</td>
+              <td>Bard</td>
+              <td>Female</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>Draven Ashclaw</td>
+              <td>Orc</td>
+              <td>Paladin</td>
+              <td>Male</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>Grosha Nightbrand</td>
+              <td>Orc</td>
+              <td>Warlock</td>
+              <td>Female</td>
+              <td>Chaotic Neutral</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>Malphas Greenhollow</td>
+              <td>Tiefling</td>
+              <td>Druid</td>
+              <td>Male</td>
+              <td>True Neutral</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>Lilith Cinderveil</td>
+              <td>Tiefling</td>
+              <td>Sorcerer</td>
+              <td>Female</td>
+              <td>Chaotic Good</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>Azrael Cindermark</td>
+              <td>Tiefling</td>
+              <td>Warlock</td>
+              <td>Male</td>
+              <td>Neutral Good</td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>Solace-7</td>
+              <td>Warforged</td>
+              <td>Fighter</td>
+              <td>N/A</td>
+              <td>True Neutral</td>
+            </tr>
+          </tbody></table>
+          <h2 class="section-title">Characters</h2>
+          <div class="character-grid">
+            <section class="character-card">
+              <h2 class="char-name">Seraphina Vaelthorne</h2>
+              <p class="char-subtitle">Aasimar Cleric</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Lawful Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Noble — skills Insight <em>(class)</em>/Religion <em>(class)</em>, History &amp; Persuasion <em>(background)</em>; Origin Feat: Skilled (gains proficiency in one additional skill)</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'1" (tall for an Aasimar)</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 13 (+1) · DEX 12 (+1) · CON 15 (+2) · INT 8 (−1) · WIS 17 (+3) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>10 (d8 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Insight, Religion (class); History, Persuasion (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Celestial Resistance (necrotic/radiant), Healing Hands, Light Bearer (<em>Light</em> cantrip)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Celestial, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Sacred Flame, Light (species), Guidance. Prepared — Cure Wounds, Bless, Healing Word, Guiding Bolt</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I judge people by their actions, not their birth or their words.” / “I keep every promise I make, even the small ones, because a broken small promise is still a broken promise.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A small, weightless glass orb that glows faintly whenever a prayer is spoken nearby.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Silver-flecked bronze skin, faintly luminous grey eyes, and close-cropped white hair. Built solidly rather than delicately, with the calm, unhurried bearing of someone used to being watched.</dd></div>
+              </dl>
+              <p class="backstory">Born to a minor noble house that had, for three generations, quietly funded the temple district of its city, Seraphina grew up assuming the divine glow in her eyes meant she was destined for a cathedral pulpit rather than a bloodline. Her upbringing gave her a courtier’s fluency in history and persuasion, but it was the glass orb her grandmother left her—an old temple relic that hums warm when someone nearby prays sincerely—that convinced her the gods wanted something more active from her than diplomacy. She left her house’s halls to become a traveling cleric, holding to the belief that a person’s deeds, not their pedigree, decide their worth.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Ezriel Marnhollow</h2>
+              <p class="char-subtitle">Aasimar Paladin</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Acolyte — skills Athletics &amp; Persuasion <em>(class)</em>, Insight &amp; Religion <em>(background)</em>; Origin Feat: Magic Initiate (Cleric) — <em>Guidance</em> and <em>Resistance</em> cantrips, plus <em>Bless</em> (1/long rest)</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'10"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 17 (+3) · DEX 10 (+0) · CON 15 (+2) · INT 8 (−1) · WIS 12 (+1) · CHA 13 (+1)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>12 (d10 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Athletics, Persuasion (class); Insight, Religion (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Celestial Resistance, Healing Hands, Light Bearer (<em>Light</em> cantrip)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Celestial, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Prepared — Bless (class), Cure Wounds. Also knows Guidance &amp; Resistance (feat), and can cast Bless once per long rest without a slot (feat).</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I try to find the good in everyone, even people who’ve given up on themselves.” / “I’ll break an unjust rule before I’ll break a person.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A silver feather that never quite touches the ground when dropped.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Pale gold skin with a faint metallic sheen, dark curling hair, and small downy patches at his temples that resemble feathers. Lean and long-limbed, with an easy, patient smile.</dd></div>
+              </dl>
+              <p class="backstory">Raised in a monastery that took in orphans regardless of their blood, Ezriel was taught by acolytes to read scripture before he was taught to hold a sword, and the temple’s cleric mentors left their mark on him as strongly as any knightly order would have. He carries a silver feather that fell from nowhere the night he first manifested his celestial nature; it never lands, and he’s come to see that as a reminder that grace doesn’t have to touch the ground to be real. He swore his oath not to a crown or a code, but to the idea that everyone—sinner or saint—deserves someone willing to stand between them and ruin.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Vezz Kalathrax</h2>
+              <p class="char-subtitle">Dragonborn Sorcerer</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Chaotic Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Sage — skills Intimidation &amp; Persuasion <em>(class)</em>, Arcana &amp; History <em>(background)</em>; Origin Feat: Magic Initiate (Wizard) — <em>Fire Bolt</em> and <em>Mage Hand</em> cantrips, plus <em>Shield</em> (1/long rest)</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'5"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 10 (+0) · WIS 12 (+1) · CHA 17 (+3)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>8 (d6 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Intimidation, Persuasion (class); Arcana, History (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Draconic Ancestry (Blue — lightning), Darkvision, Breath Weapon (lightning line), Damage Resistance (lightning)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Draconic, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Shocking Grasp, Prestidigitation, Message, Minor Illusion. 1st level — Witch Bolt, Chromatic Orb (cast as lightning). Also knows Fire Bolt &amp; Mage Hand (feat), Shield 1/long rest (feat).</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I don’t much care for rules, but I always know the right thing to do.” / “I speak my mind, even to people who’d rather I didn’t.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A shard of blue crystal that crackles faintly with static when handled.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Cobalt-blue scales that shift to near-black in shadow, and a long, storm-cloud grey crest running down the back of her skull. Wiry and restless, always tapping or fidgeting, with sparks occasionally jumping between her claws when she’s excited.</dd></div>
+              </dl>
+              <p class="backstory">Vezz’s blue-dragon bloodline announced itself early—she could taste ozone in the air before storms and once shocked a tutor half-unconscious by accident during a tantrum—so her clan sent her to study under sages who might explain what was happening inside her. She learned enough formal wizardry to name the phenomenon (and to pick up a little of it herself), but her power always insisted on running wild and instinctive rather than studied, a shard of storm-charged crystal in her pocket her only real “spellbook.” She’s since concluded that rules are for people whose magic asks permission first, and set out to use her gifts wherever she judged it right, sage’s credentials be damned.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Thurgon Emberscale</h2>
+              <p class="char-subtitle">Dragonborn Barbarian</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Chaotic Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Soldier — skills Perception &amp; Survival <em>(class)</em>, Athletics &amp; Intimidation <em>(background)</em>; Origin Feat: Savage Attacker</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'7"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 17 (+3) · DEX 13 (+1) · CON 15 (+2) · INT 8 (−1) · WIS 12 (+1) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>14 (d12 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Perception, Survival (class); Athletics, Intimidation (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Draconic Ancestry (Red — fire), Darkvision, Breath Weapon (fire cone), Damage Resistance (fire)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Draconic, Giant</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I don’t like being told what to do, but I always know which side to fight for.” / “A fair fight is boring—I’d rather protect someone who can’t fight at all.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A fire-blackened tooth, easily large enough to have come from a dragon.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Deep red scales scorched darker along the ridges of his arms, with amber eyes and a heavy, scarred jaw. Massively built even among dragonborn, with a habit of cracking his knuckles before a fight.</dd></div>
+              </dl>
+              <p class="backstory">Thurgon fought in a border regiment before he ever picked a cause of his own, and it was there, in the smoke of a burning supply line, that he found the fire-blackened tooth he still carries—pulled, he swears, from the jaw of the wyrm his unit failed to kill and that killed most of them instead. He walked away from the army not long after, unwilling to keep taking orders he didn’t believe in, but he kept the discipline the soldier’s life burned into him: he still fights like he’s covering someone’s flank, because he always is. His rage runs as hot as his breath weapon, and he’s never once used it on someone who didn’t have it coming.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Borin Ironfoot</h2>
+              <p class="char-subtitle">Dwarf Fighter</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Lawful Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Guard — skills History &amp; Intimidation <em>(class)</em>, Athletics &amp; Perception <em>(background)</em>; Origin Feat: Alert</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>4'6"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 17 (+3) · DEX 13 (+1) · CON 15+1 Dwarven Toughness (+2) · INT 8 (−1) · WIS 12 (+1) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>13 (d10 + 2, +1 Dwarven Toughness)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>History, Intimidation (class); Athletics, Perception (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Dwarven Resilience (poison resistance/advantage), Dwarven Toughness (+1 HP/level), Stonecunning</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Dwarvish, Sign Language</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I stand exactly where I said I’d stand, even when it costs me.” / “I believe everyone deserves the same protection, whether they can pay for it or not.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A tiny, perfect cube of stone that always feels warm to the touch.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Iron-grey beard braided in two neat plaits, ruddy weathered skin, and a solid, block-like build even by dwarven standards. Missing the tip of one ear from an old skirmish.</dd></div>
+              </dl>
+              <p class="backstory">Borin spent a decade guarding the toll-gate of a mountain pass, and the warm stone cube he carries was cut from the gatehouse’s foundation the day it finally collapsed under a giant’s assault he alone survived to report. He held that gate for three hours after everyone else had run, not out of stubbornness but because he’d told the merchants sheltering behind him that he would, and a dwarf’s word is a promise carved in stone. He picked up sword and shield in earnest after that, deciding that a single gate was too small a thing to guard when there was a whole road full of people who needed the same promise kept.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Helga Stonebrewer</h2>
+              <p class="char-subtitle">Dwarf Cleric</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Lawful Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Hermit — skills Insight &amp; Persuasion <em>(class)</em>, Medicine &amp; Religion <em>(background)</em>; Origin Feat: Healer</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>4'3"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 13 (+1) · DEX 12 (+1) · CON 15+1 Dwarven Toughness (+2) · INT 8 (−1) · WIS 17 (+3) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>11 (d8 + 2, +1 Dwarven Toughness)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Insight, Persuasion (class); Medicine, Religion (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Dwarven Resilience, Dwarven Toughness (+1 HP/level), Stonecunning</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Dwarvish, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Mending, Sacred Flame, Resistance. Prepared — Cure Wounds, Heroism, Guiding Bolt, Shield of Faith</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I keep my word, and I expect the same of everyone I deal with.” / “I quietly watch a room before I ever speak in it.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A set of ivory bones that clatter together, forming a different random pattern once a day.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Broad-shouldered and short even for a dwarf, with a single grey streak through otherwise coal-black hair kept in a tight bun. Calloused hands, and a habit of humming old forge-hymns while she works.</dd></div>
+              </dl>
+              <p class="backstory">Helga spent nine years alone at a mountain shrine after a cave-in took the rest of her congregation, tending an altar no one visited and, more usefully, teaching herself real field medicine from a set of divination bones she still keeps and reads every morning out of habit. When a survivor of a mining collapse stumbled into her shrine half-dead, she realized her solitary devotion had been training for exactly that moment, and she came down from the mountain to put her healer’s kit and her faith to use where people actually were. She still reads her bones each dawn, less for the future they show her than for the discipline of the ritual.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Kordun Deepdelve</h2>
+              <p class="char-subtitle">Dwarf Ranger</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Guide — skills Nature &amp; Perception <em>(class)</em>, Stealth &amp; Survival <em>(background)</em>; Origin Feat: Magic Initiate (Druid) — <em>Druidcraft</em> and <em>Guidance</em> cantrips, plus <em>Goodberry</em> (1/long rest)</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>4'9" (tall for a dwarf)</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 12 (+1) · DEX 17 (+3) · CON 13+1 Dwarven Toughness (+2) · INT 10 (+0) · WIS 15 (+2) · CHA 8 (−1)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>12 (d10 + 1, +1 Dwarven Toughness)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Nature, Perception (class); Stealth, Survival (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Dwarven Resilience, Dwarven Toughness (+1 HP/level), Stonecunning</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Dwarvish, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Prepared — Hunter’s Mark, Goodberry (class). Also knows Druidcraft &amp; Guidance (feat), Goodberry 1/long rest without a slot (feat).</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I’d rather help someone quietly than be thanked loudly for it.” / “I take my time; a rushed decision is usually a wrong one.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A small mechanical bird that flaps its wings when wound with a key.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Sun-browned skin despite his subterranean heritage, a close-cropped russet beard, and quick, watchful eyes. Moves with surprising quiet for someone built like a barrel.</dd></div>
+              </dl>
+              <p class="backstory">Kordun left the deep holds young to guide surface merchants through mountain passes, and somewhere along the way traded stonecunning for a working knowledge of goat trails, weather, and the little clockwork bird—a gift from a grateful trader he once led safely through a blizzard—that he still winds up on cold nights out of fondness rather than need. He’s slower to speak than most dwarves and slower still to take credit, preferring to see travelers safely to their destination and vanish before the toasts start. His time in the deep holds taught him stone; his years on the surface taught him patience.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Illyara Moonwhisper</h2>
+              <p class="char-subtitle">Elf Wizard (High Elf)</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Scribe — skills Arcana &amp; History <em>(class)</em>, Investigation &amp; Perception <em>(background)</em>; Origin Feat: Skilled</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'7"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 17 (+3) · WIS 12 (+1) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>8 (d6 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Arcana, History (class); Investigation, Insight (background — Insight replaces the background’s normal Perception, which Illyara already has from Keen Senses)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Fey Ancestry, Keen Senses (Perception), Trance, Elven Lineage (High Elf — <em>Prestidigitation</em> cantrip)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Elvish, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Fire Bolt, Mage Hand, Minor Illusion, Prestidigitation (lineage). Spellbook — Shield, Magic Missile, Detect Magic, Identify, Mage Armor, Sleep. Prepared — Shield, Magic Missile, Detect Magic, Mage Armor</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I always try to help those who ask, even strangers.” / “I’d rather understand a problem fully than solve it quickly.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A mummified goblin hand, fingers curled as if still clutching something.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Porcelain-pale skin, silver hair worn long and unbound, and faintly pointed ears that twitch when she’s concentrating. Slight of build, with ink stains permanently on two fingers.</dd></div>
+              </dl>
+              <p class="backstory">Illyara trained as a scribe in a scholar’s archive long before she ever cast a spell, cataloguing the marginalia of dead wizards until she started recognizing the patterns behind their notation and decided to try it herself. The mummified goblin hand on her belt came from a discarded specimen jar in that same archive’s basement—nobody could tell her why it was kept, and she’s grown attached to the mystery of it. She left the archive to actually use what she’d copied out for a decade, believing that knowledge left unused is a debt owed to whoever asks for help with it.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Thal Duskrunner</h2>
+              <p class="char-subtitle">Elf Rogue (Drow)</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Chaotic Neutral</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Criminal — skills Acrobatics, Deception, Insight, Perception (class, chosen 4); Sleight of Hand, Stealth (background); Origin Feat: Alert</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'8"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 10 (+0) · DEX 17 (+3) · CON 15 (+2) · INT 13 (+1) · WIS 12 (+1) · CHA 8 (−1)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>10 (d8 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Acrobatics, Deception, Insight, Perception (class); Sleight of Hand, Stealth (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Superior Darkvision, Fey Ancestry, Keen Senses, Trance, Elven Lineage (Drow — <em>Dancing Lights</em> cantrip)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Elvish, Thieves’ Cant, Sign Language</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I don’t follow rules I didn’t agree to, but I keep the ones I choose.” / “I trust results more than intentions—show me, don’t tell me.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A deck of cards from an unfamiliar game, missing exactly one card.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Charcoal-grey skin, stark white hair kept short and practical, and pale violet eyes. Quick and economical in his movements, never wasting a gesture.</dd></div>
+              </dl>
+              <p class="backstory">Thal left the deep places of his birth before his lineage could decide who he’d become, and made his way as a card sharp and cutpurse in surface cities where nobody looked twice at a hooded elf in a card den. The deck he keeps—missing one card he swears he didn’t take—came from the last game he threw on purpose, letting a desperate young mark win back his family’s debt instead of taking the pot himself. He answers to no creed and no city, but he’s found his own private line he won’t cross, and he trusts a person’s actions in the moment far more than any oath they’ve sworn.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Sylvaine Willowmere</h2>
+              <p class="char-subtitle">Elf Druid (Wood Elf)</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>True Neutral</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Farmer — skills Perception &amp; Survival <em>(class)</em>, Animal Handling &amp; Nature <em>(background)</em>; Origin Feat: Tough</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'4"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 12 (+1) · WIS 17 (+3) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>12 (d8 + 2, +2 Tough feat)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Perception, Survival (class); Animal Handling, Nature (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Fey Ancestry, Keen Senses, Trance, Elven Lineage (Wood Elf — <em>Druidcraft</em> cantrip, +5 walking speed)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Elvish, Druidic, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Druidcraft (lineage), Produce Flame, Guidance. Prepared — Entangle, Goodberry, Speak with Animals, Healing Word</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I believe everything is in balance, and I distrust anyone who claims to have all the answers.” / “I watch and listen more than I speak.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A seed pod that rattles as though it holds a dozen tiny stones.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Sun-freckled olive skin, hair the color of turned autumn leaves, and eyes a startling amber. Lithe and sturdier than most wood elves, with dirt permanently under her nails.</dd></div>
+              </dl>
+              <p class="backstory">Raised on the border between a farming hamlet and the old forest it was slowly clearing for more fields, Sylvaine grew up caught between two worlds that each claimed to know the right way to live, and grew suspicious of anyone who claimed certainty at all. The seed pod she carries came from the last tree the village felled before she convinced them to stop, and she keeps it as a reminder of the balance she brokered between plow and root. Her farmer’s toughness serves her as well in the wild as it did behind a plow, and she moves through both worlds as a quiet arbiter rather than a partisan of either.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Fizzwick Cogsprocket</h2>
+              <p class="char-subtitle">Gnome Artificer (Rock Gnome)</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Artisan — skills Arcana &amp; Medicine <em>(class)</em>, Investigation &amp; Persuasion <em>(background)</em>; Tool Proficiency: Tinker’s Tools; Origin Feat: Crafter</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Small</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>3'2"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 17 (+3) · WIS 12 (+1) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>10 (d8 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Arcana, Medicine (class); Investigation, Persuasion (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Gnomish Cunning, Gnomish Lineage (Rock Gnome — Tinker: build a Tiny clockwork device)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Gnomish, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Prepared — Cure Wounds, Faerie Fire, Feather Fall, Grease</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I want to help people, and I usually build something to do it.” / “I get along with almost anyone—I just talk until we find common ground.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A brass gear that doesn’t seem to fit any machine he’s ever seen.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Round-faced and cheerful, with wild copper hair that refuses to stay under any hat and soot smudges he never quite manages to wash off. Small, quick hands always fiddling with something.</dd></div>
+              </dl>
+              <p class="backstory">Fizzwick apprenticed to a gnomish artisan collective where tinker’s tools were treated as seriously as any spellbook, and it was there he learned to bind minor magic directly into gears, springs, and salves rather than memorizing it the way a wizard would—his infusions have grease stains and his toolkit has arcane sigils scratched into the lid. The mystery brass gear he carries doesn’t match anything he’s built, which nags at him constantly, and he’s quietly convinced that reverse-engineering its match will teach him something important. He’s endlessly good-natured about explaining his half-finished contraptions to anyone who asks, on the theory that a shared understanding—and a well-built gadget—fixes more problems than a clever secret ever could.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Pip Fernwhistle</h2>
+              <p class="char-subtitle">Gnome Bard (Forest Gnome)</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Chaotic Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Entertainer — skills Deception, Persuasion, Sleight of Hand <em>(class, chosen 3)</em>; Acrobatics, Performance <em>(background)</em>; Origin Feat: Musician</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Small</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>2'11"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 15 (+2) · CON 13 (+1) · INT 10 (+0) · WIS 12 (+1) · CHA 17 (+3)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>9 (d8 + 1)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Deception, Persuasion, Sleight of Hand (class); Acrobatics, Performance (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Gnomish Cunning, Gnomish Lineage (Forest Gnome — <em>Minor Illusion</em> cantrip, Speak with Small Beasts)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Gnomish, Sylvan</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Vicious Mockery, Minor Illusion (lineage). Known — Dissonant Whispers, Healing Word, Charm Person, Faerie Fire</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“Rules are more like suggestions, and I follow the ones that feel right.” / “I judge people by their actions, but I’m quick to forgive a good story.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A whistle carved from bone; blowing it summons a single, briefly obedient firefly.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Freckled and impish, with grass-green hair braided with tiny bells, and eyes that never seem to sit still. Barely three feet tall but somehow always the loudest thing in the room.</dd></div>
+              </dl>
+              <p class="backstory">Pip grew up talking to squirrels and pixies in a forest gnome warren before she ever talked to a paying audience, and she’s never really stopped treating the two as the same skill. The bone whistle she plays—a gift from the warren’s oldest inhabitant, who claimed it was carved from a “very reasonable” dragon—genuinely does call a firefly, though nobody’s sure if that’s real magic or just a very cooperative bug. She travels from town to town telling stories that are maybe seventy percent true, on the theory that the last thirty percent is what people actually remember, and she can’t be talked into caring much about which rules she’s bending as long as everyone leaves smiling.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Krag Stonefist</h2>
+              <p class="char-subtitle">Goliath Barbarian</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Chaotic Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Guard — skills Intimidation &amp; Survival <em>(class)</em>, Athletics &amp; Perception <em>(background)</em>; Origin Feat: Alert</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>7'4"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 17 (+3) · DEX 13 (+1) · CON 15 (+2) · INT 8 (−1) · WIS 12 (+1) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>14 (d12 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Intimidation, Survival (class); Athletics, Perception (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Giant Ancestry (Stone’s Endurance — reduce damage taken 1/turn), Large Form (later level), Powerful Build</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Giant, Sign Language</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I don’t wait for permission to protect someone.” / “I trust my own judgment over any chain of command.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A shard of a broken sword, said to have belonged to a hero of old.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Slate-grey skin mottled with darker patches, a shaved head tattooed with clan markings, and a physique like a landslide. Even other goliaths step aside for him.</dd></div>
+              </dl>
+              <p class="backstory">Krag guarded a mountain waystation his whole clan used for trade, until the day raiders came through in numbers the waystation’s actual charter never anticipated, and he broke that charter without hesitation to save the traders sheltering there rather than wait for clan elders to authorize it. He kept the broken sword shard he pried from the hand of the raiders’ champion, less as a trophy than as a reminder that he’d rather answer for a decision made too fast than a life lost to one made too slow. Clan law respects hierarchy; Krag respects whoever’s actually still standing between people and danger.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Vashti Cloudstep</h2>
+              <p class="char-subtitle">Goliath Monk</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Lawful Neutral</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Hermit — skills Acrobatics &amp; Stealth <em>(class)</em>, Medicine &amp; Religion <em>(background)</em>; Origin Feat: Healer</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>7'0"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 12 (+1) · DEX 17 (+3) · CON 13 (+1) · INT 10 (+0) · WIS 15 (+2) · CHA 8 (−1)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>9 (d8 + 1)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Acrobatics, Stealth (class); Medicine, Religion (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Giant Ancestry (Cloud’s Jaunt — short-range teleport, bonus action), Large Form (later level), Powerful Build</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Giant, Sign Language</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I follow the discipline of my order exactly, in the belief that consistency is its own kind of mercy.” / “I keep my own counsel and speak only when it matters.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A cloth-wrapped set of bone dice, each face worn nearly smooth from handling.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Weathered stone-grey skin with pale ritual scarring across both forearms, a shaved head, and unusually calm, heavy-lidded eyes for someone so physically imposing.</dd></div>
+              </dl>
+              <p class="backstory">Vashti spent seven years alone at a mountain hermitage that took in the injured and the lost regardless of who had sent them there, and it was there she learned both the strict, silent forms of her monastic order and the plainer craft of setting bones and dressing wounds. The dice she carries were left behind by a dying traveler she tended in her second year, worn smooth by his own years of anxious handling, and she rolls them each morning as a small private ritual rather than for any answer they give. She holds to her order’s discipline with total consistency, believing that the same careful rule applied to everyone, every time, is a kind of fairness the world otherwise lacks.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Rosalind Underfoot</h2>
+              <p class="char-subtitle">Halfling Rogue</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Charlatan — skills Acrobatics, Insight, Perception, Stealth <em>(class, chosen 4)</em>; Deception, Sleight of Hand <em>(background)</em>; Origin Feat: Skilled</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Small</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>3'0"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 10 (+0) · DEX 17 (+3) · CON 15 (+2) · INT 12 (+1) · WIS 8 (−1) · CHA 13 (+1)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>10 (d8 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Acrobatics, Insight, Perception, Stealth (class); Deception, Sleight of Hand (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Brave, Halfling Nimbleness, Luck (reroll 1s), Naturally Stealthy</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Halfling, Thieves’ Cant, Sign Language</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I always give a mark a way to walk away with their dignity, even while I’m taking their coin.” / “I can’t watch someone get cheated worse than I’d cheat them myself. I step in.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A small, weathered key that doesn’t fit any lock she’s found yet.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Round-cheeked and sandy-haired, with quick brown eyes and the kind of unthreatening smile that makes people forget to check their pockets. Nimble even for a halfling.</dd></div>
+              </dl>
+              <p class="backstory">Rosalind ran a long con circuit before she ever picked a lock, and the old key she carries is the one souvenir she kept from her very first mark—a lonely merchant she talked out of his coin purse but who, she later learned, had been about to lose everything to a much crueller con artist anyway, so she’s chosen to believe she did him a favor. She’s stuck to a private rule ever since: she’ll relieve a fool of his excess, but she’ll never let someone else fleece a mark worse than she would, and more than once that’s meant tipping her hand to save a stranger from a nastier grift. She still hasn’t found the lock that key belongs to, and some nights she suspects that’s the point.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Tobias Steepwater</h2>
+              <p class="char-subtitle">Halfling Monk</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Lawful Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Merchant — skills History &amp; Insight <em>(class)</em>, Animal Handling &amp; Persuasion <em>(background)</em>; Tool Proficiency: Herbalism Kit (specialized in tea processing); Origin Feat: Lucky</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Small</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>3'1"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 12 (+1) · DEX 17 (+3) · CON 13 (+1) · INT 10 (+0) · WIS 15 (+2) · CHA 8 (−1) <strong>FIX</strong></dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>9 (d8 + 1)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>History, Insight (class); Animal Handling, Persuasion (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Brave, Halfling Nimbleness, Luck (reroll 1s), Naturally Stealthy</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Halfling, Sign Language</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I follow my order’s discipline to the letter, because a promise kept exactly is worth more than one kept ‘close enough.’” / “I’ll always pour a stranger a cup of tea before I ask what they want.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A tin of tea leaves that never seems to run out, though it smells faintly of jasmine and rain.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Round and cheerful, with weathered hands from decades of handling dried leaves, tea-stained fingertips, and a neat little goatee he grooms obsessively. Surprisingly quick on his feet.</dd></div>
+              </dl>
+              <p class="backstory">Long before he ever took a monastic vow, Tobias ran a modest but well-loved tea stall along a caravan road, learning to dry, blend, and diagnose leaves the way an apothecary learns herbs, and his herbalism kit is really just his old trade toolkit reclassified for a wandering life. A traveling monk who stopped at his stall every season for a decade eventually convinced him the stillness of brewing a proper cup wasn’t so different from the stillness at the center of the martial forms he taught, and Tobias took up the discipline in his forties, tin of never-quite-empty tea leaves in tow. He still offers a cup before a conversation and a bow before a fight, and treats both as the same kind of hospitality.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Maren Voss</h2>
+              <p class="char-subtitle">Human Wizard</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Lawful Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Wayfarer — skills Arcana &amp; History <em>(class)</em>, Insight &amp; Stealth <em>(background)</em>; Origin Feat: Lucky</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'9"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 17 (+3) · WIS 12 (+1) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>8 (d6 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Arcana, History (class); Insight, Stealth (background); Skillful (species bonus skill): Investigation</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Resourceful (Heroic Inspiration after a long rest), Skillful (bonus skill — Investigation), Versatile (bonus Origin Feat — Telekinetic, granting the <em>Mage Hand</em> cantrip and a shoving push)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Orc</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Fire Bolt, Minor Illusion, Prestidigitation (Mage Hand covered by Telekinetic feat instead). Spellbook — Shield, Magic Missile, Detect Magic, Identify, Mage Armor, Sleep. Prepared — Shield, Magic Missile, Detect Magic, Mage Armor</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I keep my word to the letter, no matter how far I have to travel to do it.” / “I trust what I can verify with my own eyes over any rumor.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A soldier’s medal from an army that, as far as anyone can tell, no longer exists.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Sun-weathered olive skin, a jagged scar through one eyebrow, and cropped dark hair going prematurely grey at the temples. Compact and solidly muscled, moves like she’s always on watch.</dd></div>
+              </dl>
+              <p class="backstory">Maren spent a decade escorting caravans across three kingdoms’ worth of bad roads, and the medal she carries—stamped with the insignia of a mercenary company that dissolved before she could collect her final pay—is the only proof left that the debt owed her was ever real. It was on that road, trading Orcish over campfires and standing night-watches under unfamiliar stars, that she started noticing patterns in the world that weren’t quite natural—and a retired hedge wizard among the drivers she guarded took her on as a late, unlikely apprentice. She still means to collect on that medal someday, on principle, but in the meantime she’s made a habit of finishing whatever job she starts exactly as promised—a caravan guard’s discipline now bent toward mastering a wizard’s—since she knows better than anyone how it feels when someone doesn’t follow through.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Silas Windham</h2>
+              <p class="char-subtitle">Human Ranger</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>True Neutral</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Guide — skills Animal Handling &amp; Perception <em>(class)</em>, Stealth &amp; Survival <em>(background)</em>; Origin Feat: Magic Initiate (Druid) — <em>Druidcraft</em> and <em>Produce Flame</em> cantrips, plus <em>Healing Word</em> (1/long rest)</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'0"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 12 (+1) · DEX 17 (+3) · CON 13 (+1) · INT 10 (+0) · WIS 15 (+2) · CHA 8 (−1)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>11 (d10 + 1)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Animal Handling, Perception (class); Stealth, Survival (background); Skillful (species bonus skill): Investigation</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Resourceful, Skillful (bonus skill), Versatile (bonus Origin Feat — Telepathic)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Prepared — Hunter’s Mark, Cure Wounds (class). Also knows Druidcraft &amp; Produce Flame (feat), Healing Word 1/long rest without a slot (feat).</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I keep to the middle path; too much of any one thing tips a person over.” / “I’d rather quietly observe a stranger before deciding whether to trust them.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A pressed wildflower that never wilts, no matter how long it’s carried.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Weather-tanned and rangy, with sandy hair pulled back in a short tail and pale eyes that seem to focus on the far distance even indoors. Moves silently out of habit rather than intent.</dd></div>
+              </dl>
+              <p class="backstory">Silas guided pilgrims and merchants alike through a stretch of borderland that answered to no single kingdom, which taught him early to trust the terrain and the weather more than anyone’s claimed allegiance. The wildflower he keeps was picked by a child he guided to safety during a wildfire, pressed flat in his guidebook, and has somehow never faded since—he’s stopped trying to explain it and just accepts it as one of the woods’ small, unbothered mysteries. He holds no strong loyalty to law or its absence, only to the discipline of watching closely before acting, a habit that’s kept both him and everyone he’s guided alive.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Odette Larkspur</h2>
+              <p class="char-subtitle">Human Bard</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Noble — skills Deception, Insight, Performance <em>(class, chosen 3)</em>; History, Persuasion <em>(background)</em>; Origin Feat: Skilled</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'6"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 15 (+2) · CON 13 (+1) · INT 10 (+0) · WIS 12 (+1) · CHA 17 (+3)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>9 (d8 + 1)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Deception, Insight, Performance (class); History, Persuasion (background); Skillful (species bonus skill): Arcana</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Resourceful, Skillful (bonus skill), Versatile (bonus Origin Feat — Musician)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Elvish</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Vicious Mockery, Message. Known — Healing Word, Dissonant Whispers, Tasha’s Hideous Laughter, Comprehend Languages</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I try to help whoever needs it, whether or not they can repay the favor.” / “I read a room before I decide what version of the truth it needs.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A silver hand mirror that shows her reflection roughly ten seconds delayed.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Fair-skinned with elaborately styled auburn hair (even on the road), and sharp, assessing green eyes. Carries herself with a courtier’s posture that never quite relaxes.</dd></div>
+              </dl>
+              <p class="backstory">Odette was raised at court to read a room before she ever spoke in one, trained in history and persuasion the way other children were trained in swordplay, and it served her well until she realized the court itself was rotting from favors owed and debts hidden. The silver mirror she carries—a coming-of-age gift, delayed reflection and all—became an odd private joke about how everyone at court always seemed a beat behind their own true feelings. She left to use her considerable charm for people who actually needed help rather than people who merely expected it, though she never did lose the instinct to read a room first.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Draven Ashclaw</h2>
+              <p class="char-subtitle">Orc Paladin</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Farmer — skills Athletics &amp; Intimidation <em>(class)</em>, Animal Handling &amp; Nature <em>(background)</em>; Origin Feat: Tough</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'4"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 17 (+3) · DEX 10 (+0) · CON 15 (+2) · INT 8 (−1) · WIS 12 (+1) · CHA 13 (+1)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>14 (d10 + 2, +2 Tough feat)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Athletics, Intimidation (class); Animal Handling, Nature (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Adrenaline Rush, Darkvision, Relentless Endurance</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Orc, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Prepared — Divine Smite, Command</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I try to prove, every day, that strength is worth nothing if it isn’t used to protect someone.” / “I don’t need anyone’s approval to know I’m doing right.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A crude wooden holy symbol, carved by a child and given to him in thanks.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Grey-green skin, a single prominent lower tusk (the other broken off young), and a build like a plow ox. A soft, surprising gentleness in his eyes that undercuts his size.</dd></div>
+              </dl>
+              <p class="backstory">Draven grew up on a farmstead that took in an orc war-band survivor as a hired hand rather than turning him away, and when raiders threatened that same farmstead years later, he stood between them and the family that had raised him without a second thought. The crude holy symbol he wears was carved by the farmer’s youngest child in the week after, the closest thing to an ordination he ever received, and he’s worn it as his paladin’s symbol ever since rather than any temple’s official sigil. He fights to prove, one farmstead at a time, that an orc’s strength can mean shelter instead of ruin.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Grosha Nightbrand</h2>
+              <p class="char-subtitle">Orc Warlock</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Chaotic Neutral</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Criminal — skills Deception &amp; Intimidation <em>(class)</em>, Sleight of Hand &amp; Stealth <em>(background)</em>; Origin Feat: Alert</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'1"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 10 (+0) · WIS 12 (+1) · CHA 17 (+3)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>10 (d8 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Deception, Intimidation (class); Sleight of Hand, Stealth (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Adrenaline Rush, Darkvision, Relentless Endurance</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Orc, Infernal</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Eldritch Blast, Minor Illusion. Known — Command, Hex</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I made a deal, and I’ll keep exactly the letter of it and not one word more.” / “I don’t answer to anyone’s law but my own bargain.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A small vial of dirt from a place she can’t quite remember anymore.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Ash-grey skin with dark tribal tattoos across one shoulder, a shaved scalp save for a single long braid, and unsettling violet eyes—a gift, or curse, from her patron. Wiry and quick rather than bulky for an orc.</dd></div>
+              </dl>
+              <p class="backstory">Grosha bartered her clan’s freedom from a fiendish patron’s debt collectors in a deal she doesn’t fully remember making—she woke with violet eyes, a vial of dirt from the bargaining site clutched in her fist, and a pact she’s still working out the true price of. She kept to the criminal circuits she knew afterward, using her new powers as just another set of tools for surviving between the lines of other people’s laws. She holds fiercely to the exact terms of any bargain she strikes—hers or anyone else’s—even as she treats every law that isn’t a bargain as someone else’s problem entirely.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Malphas Greenhollow</h2>
+              <p class="char-subtitle">Tiefling Druid</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>True Neutral</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Hermit — skills Animal Handling &amp; Nature <em>(class)</em>, Medicine &amp; Religion <em>(background)</em>; Origin Feat: Healer</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'11"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 12 (+1) · WIS 17 (+3) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>10 (d8 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Animal Handling, Nature (class); Medicine, Religion (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Fiendish Legacy (Abyssal — poison resistance, <em>Poison Spray</em> cantrip)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Infernal, Druidic, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Druidcraft, Thorn Whip, Poison Spray (legacy). Prepared — Faerie Fire, Entangle, Animal Friendship, Cure Wounds</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I believe every creature—however twisted its shape—deserves a place in the balance.” / “I keep to myself and let my actions, not my horns, speak for me.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A pressed-flower book containing blossoms of a species he’s never found growing anywhere since.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Deep plum skin, small backswept horns, and a thin, whip-like tail he uses almost like a third hand. Quiet, watchful yellow eyes, more often found crouched examining moss than standing tall.</dd></div>
+              </dl>
+              <p class="backstory">Malphas fled to the wilds young, tired of being treated as an omen wherever his infernal features took him, and found in the deep forest a hermitage that judged him by nothing but how gently he handled its wounded animals. The pressed-flower book he carries came from that hermitage’s founder, a wildflower species that vanished from the region entirely—he’s spent years searching for a second bloom, partly from botanical curiosity and partly because he isn’t ready to let go of the one place that ever judged him fairly. He’s settled into a philosophy that nature keeps no tally of good or evil, only of balance, and he’s chosen to live by that same measure rather than the one strangers apply to his horns.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Lilith Cinderveil</h2>
+              <p class="char-subtitle">Tiefling Sorcerer</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Female</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Chaotic Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Charlatan — skills Arcana &amp; Persuasion <em>(class)</em>, Deception &amp; Sleight of Hand <em>(background)</em>; Origin Feat: Skilled</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>5'7"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 10 (+0) · WIS 12 (+1) · CHA 17 (+3)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>8 (d6 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Arcana, Persuasion (class); Deception, Sleight of Hand (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Fiendish Legacy (Infernal — fire resistance, <em>Fire Bolt</em> cantrip)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Infernal, Sign Language</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Cantrips — Fire Bolt (legacy), Prestidigitation, Minor Illusion, Message. Known — Burning Hands, Chromatic Orb (cast as fire)</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I don’t much care what’s proper, only what’s kind.” / “I’d rather dazzle a crowd into hope than frighten them into obedience.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A plain brass ring that turns black whenever danger draws near.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Deep crimson skin, curling ram-like horns wrapped in ribbon, and a small forked tail she’s decorated rather than hidden. Warm-eyed and theatrical, always mid-gesture.</dd></div>
+              </dl>
+              <p class="backstory">Lilith worked carnival crowds for years, turning her innate fire into a stage act rather than a threat before she’d ever heard the word “sorcerer,” and the blackening ring she wears—plucked from a rigged game she ran as a girl—turned out to genuinely warn her of danger, which is either the carnival’s best trick or the one bit of real magic in her old act. She kept the showmanship even after she understood her power for what it was, believing that a little charlatan’s flourish does more good calming a frightened crowd than an honest, blunt warning ever would. She bends plenty of small rules in a night’s work, but never at the cost of someone who trusted her.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Azrael Cindermark</h2>
+              <p class="char-subtitle">Tiefling Warlock</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>Male</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>Neutral Good</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Sailor — skills Arcana &amp; Investigation <em>(class)</em>, Acrobatics &amp; Perception <em>(background)</em>; Origin Feat: Tavern Brawler</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'0"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 8 (−1) · DEX 13 (+1) · CON 15 (+2) · INT 10 (+0) · WIS 12 (+1) · CHA 17 (+3)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>10 (d8 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Arcana, Investigation (class); Acrobatics, Perception (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Darkvision, Fiendish Legacy (Infernal — fire resistance, <em>Fire Bolt</em> cantrip)</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Infernal, Primordial</dd></div>
+                <div class="row row-spells"><dt>Spells</dt><dd>Patron: The Fiend. Cantrips — Eldritch Blast, Fire Bolt (legacy). Known — Hellish Rebuke, Armor of Agathys</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I keep the bargains I make, but I try to make sure no one else pays for them.” / “I don’t trust calm water. I’ve learned to watch for what’s under it.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A ship’s bell no bigger than a thumb, which rings faintly when a storm draws near.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>Soot-dark skin with faint ember-orange striations, short backswept horns, and sea-worn calluses across both palms. Broad-shouldered from years hauling rigging.</dd></div>
+              </dl>
+              <p class="backstory">Azrael struck his pact mid-shipwreck, trading a portion of his future to a patient fiend in exchange for his whole crew’s survival, and has spent every year since making certain the bargain’s cost lands on him alone rather than any of the sailors he saved. The tiny bell he carries came from that same ship’s wheel, salvaged before it sank, and its faint ring before a storm has saved more than one later crew from getting caught unprepared. He trusts weather and warning signs over promises, having learned the hard way that the calmest-looking deal can still sink you.</p>
+            </section>
+            <section class="character-card">
+              <h2 class="char-name">Solace-7</h2>
+              <p class="char-subtitle">Warforged Fighter</p>
+              <dl class="statblock">
+                <div class="row row-gender"><dt>Gender</dt><dd>N/A</dd></div>
+                <div class="row row-alignment"><dt>Alignment</dt><dd>True Neutral</dd></div>
+                <div class="row row-background-origin"><dt>Background (Origin)</dt><dd>Guard — skills Insight &amp; Survival <em>(class)</em>, Athletics &amp; Perception <em>(background)</em>; Origin Feat: Alert</dd></div>
+                <div class="row row-size"><dt>Size</dt><dd>Medium</dd></div>
+                <div class="row row-height"><dt>Height</dt><dd>6'2"</dd></div>
+                <div class="row row-ability-scores"><dt>Ability Scores</dt><dd>STR 17 (+3) · DEX 13 (+1) · CON 15 (+2) · INT 8 (−1) · WIS 12 (+1) · CHA 10 (+0)</dd></div>
+                <div class="row row-hit-points"><dt>Hit Points</dt><dd>12 (d10 + 2)</dd></div>
+                <div class="row row-skills"><dt>Skills</dt><dd>Insight, Survival (class); Athletics, Perception (background)</dd></div>
+                <div class="row row-species-traits"><dt>Species Traits</dt><dd>Constructed Resilience (immune to disease, advantage vs. being poisoned, doesn’t need to eat/breathe/sleep), Darkvision, Integrated Protection (her plating counts as armor built into her frame), Sentry’s Rest</dd></div>
+                <div class="row row-languages"><dt>Languages</dt><dd>Common, Sign Language</dd></div>
+                <div class="row row-personality-traits"><dt>Personality Traits</dt><dd>“I weigh every decision on its own facts, not on habit or on who’s asking.” / “I don’t need to sleep, so I watch—someone should, always.”</dd></div>
+                <div class="row row-trinket"><dt>Trinket</dt><dd>A small gear-driven music box that plays a lullaby no one else seems to recognize.</dd></div>
+                <div class="row row-appearance"><dt>Appearance</dt><dd>A living-wood-and-plate frame etched with faded war-sigils, articulated joints that click faintly when she moves, and a single soft blue glow behind her eye-slits that brightens when she’s puzzling something out. Solidly built but scarred with old dents she’s never had smoothed over.</dd></div>
+              </dl>
+              <p class="backstory">Solace-7 was built and animated in the last stretch of a war she has no memory of fighting, one of a batch of soldiers forged for that single purpose and decommissioned the day the treaty was signed, left to decide, for the first time, what she actually wanted to be. She found the music box half-buried in the rubble of the workshop that made her, and though no surviving record explains the tune it plays, she keeps it wound as the closest thing she has to an inherited memory. She kept the only trade she was ever built for—she still fights, still stands watch, still reads a battlefield better than most—but now she chooses which fights are worth having, weighing every situation on its own merits precisely because no one built her a law to fall back on instead.</p>
+            </section>
+          </div>
+          <footer>Generated from dnd-characters.md</footer>
+    </main>
+  </body>
+</html>
